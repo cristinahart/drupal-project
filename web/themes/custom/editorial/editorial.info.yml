@@ -1,0 +1,14 @@
+name: Editorial
+type: theme
+description: 'theme for editorial page'
+package: Other
+core: 8.x
+libraries:
+  - editorial/global-styling
+ 
+base theme: false
+
+regions:
+  header: Header
+  sidebar: Sidebar
+  content: Content
