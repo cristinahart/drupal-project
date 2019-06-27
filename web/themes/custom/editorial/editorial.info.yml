@@ -1,11 +1,11 @@
 name: Editorial
 type: theme
-description: 'theme for editorial page'
+description: 'Theme for editorial site'
 package: Other
 core: 8.x
 libraries:
   - editorial/global-styling
- 
+
 base theme: false
 
 regions:
