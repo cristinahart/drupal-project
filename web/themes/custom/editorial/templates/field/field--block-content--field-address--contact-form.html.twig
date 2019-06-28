@@ -43,10 +43,9 @@
     label_display == 'visually_hidden' ? 'visually-hidden',
   ]
 %}
-<ul class="contact">
-  {% if label_hidden %}
-    {% for item in items %}
-      <li {{ attributes.addClass('icon solid fa-home') }}>{{ item.content }}</li>
-    {% endfor %}
-  {% endif %}
-</ul>
+
+{% if label_hidden %}
+  {% for item in items %}
+    <li {{ attributes.addClass('icon solid fa-home') }}>{{ item.content }}</li>
+  {% endfor %}
+{% endif %}
