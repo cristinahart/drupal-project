@@ -1,0 +1,25 @@
+uuid: 3d32bbcd-f028-46b4-8652-7025a2f1fc31
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:html:ece84cfb-bd9e-49d5-b12e-43d1e47e2ee5'
+  module:
+    - block_content
+  theme:
+    - editorial
+id: socialmedia
+theme: editorial
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:ece84cfb-bd9e-49d5-b12e-43d1e47e2ee5'
+settings:
+  id: 'block_content:ece84cfb-bd9e-49d5-b12e-43d1e47e2ee5'
+  label: 'Social Media'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

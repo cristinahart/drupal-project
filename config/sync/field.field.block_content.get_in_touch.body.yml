@@ -1,0 +1,22 @@
+uuid: a4850fa6-77fa-4446-8ecc-0d32efb6b0e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.get_in_touch
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.get_in_touch.body
+field_name: body
+entity_type: block_content
+bundle: get_in_touch
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

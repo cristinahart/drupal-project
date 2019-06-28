@@ -1,0 +1,8 @@
+uuid: 406bcca3-4727-4b50-aa91-e848912405ec
+langcode: en
+status: true
+dependencies: {  }
+id: html
+label: HTML
+revision: 0
+description: 'HTML snippets'

@@ -1,0 +1,32 @@
+uuid: dc3c2b17-2306-4dd1-a78f-c14f58a8e9e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_recent
+  module:
+    - node
+    - views
+  theme:
+    - editorial
+id: views_block__content_recent_block
+theme: editorial
+region: sidebar
+weight: -3
+provider: null
+plugin: 'views_block:content_recent-block_1'
+settings:
+  id: 'views_block:content_recent-block_1'
+  label: 'Ante interdum'
+  provider: views
+  label_display: visible
+  views_label: 'Ante interdum'
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

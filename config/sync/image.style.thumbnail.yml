@@ -1,0 +1,24 @@
+uuid: cefaf1c5-0e9f-48f9-b307-8f9163ae9159
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cCiWdBHgLwj5omG35lsKc4LkW4MBdmcctkVop4ol5x0
+name: thumbnail
+label: 'Thumbnail (100×100)'
+effects:
+  1cfec298-8620-4749-b100-ccb6c4500779:
+    uuid: 1cfec298-8620-4749-b100-ccb6c4500779
+    id: image_scale
+    weight: -9
+    data:
+      width: 337
+      height: 204
+      upscale: true
+  0d3a1f99-c635-4ca2-a35f-ae05fe28d4b2:
+    uuid: 0d3a1f99-c635-4ca2-a35f-ae05fe28d4b2
+    id: image_resize
+    weight: -10
+    data:
+      width: 337
+      height: 204

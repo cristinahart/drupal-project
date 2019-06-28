@@ -1,0 +1,14 @@
+uuid: 9f79323a-97bb-4130-941a-3f0dcafefe8c
+name: Editorial
+mail: cristina@frontkom.com
+slogan: 'by HTML5 UP'
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

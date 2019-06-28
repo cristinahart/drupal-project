@@ -1,0 +1,16 @@
+uuid: 49ccea07-69b6-49b6-a631-911339c78e77
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Y9NmnZHQq20ASSyTNA6JnwtWrJJiSajOehGDtmUFdM0
+name: medium
+label: 'Medium (280×165)'
+effects:
+  d0181eef-7b01-4d67-beac-cb853c623409:
+    uuid: d0181eef-7b01-4d67-beac-cb853c623409
+    id: image_resize
+    weight: -10
+    data:
+      width: 280
+      height: 165

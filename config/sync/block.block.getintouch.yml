@@ -1,0 +1,25 @@
+uuid: 34c18eac-55a8-4a34-b342-bcea0325a952
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_form:e3a9428f-c08e-4c71-b3ba-2a5c7380560e'
+  module:
+    - block_content
+  theme:
+    - editorial
+id: getintouch
+theme: editorial
+region: sidebar
+weight: -2
+provider: null
+plugin: 'block_content:e3a9428f-c08e-4c71-b3ba-2a5c7380560e'
+settings:
+  id: 'block_content:e3a9428f-c08e-4c71-b3ba-2a5c7380560e'
+  label: 'Get in touch'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
