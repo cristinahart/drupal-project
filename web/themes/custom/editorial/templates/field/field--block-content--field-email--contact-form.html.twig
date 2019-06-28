@@ -38,7 +38,15 @@
  * @ingroup themeable
  */
 #}
-
- {% for item in items %}
-   {{ item.content }}
- {% endfor %}
+{%
+  set title_classes = [
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+<ul class="contact">
+  {% if label_hidden %}
+    {% for item in items %}
+      <li {{ attributes.addClass('icon solid fa-envelope') }}>{{ item.content }}</li>
+    {% endfor %}
+  {% endif %}
+</ul>

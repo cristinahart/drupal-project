@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation for a field.
+ * Theme override for a field.
  *
  * To override output, copy the "field.html.twig" from the templates directory
  * to your theme's directory and customize it, just like customizing other
@@ -34,11 +34,8 @@
  * - label_display: The display settings for the label.
  *
  * @see template_preprocess_field()
- *
- * @ingroup themeable
  */
 #}
-
- {% for item in items %}
-   {{ item.content }}
- {% endfor %}
+{% for item in items %}
+  {{ item.content }}
+{% endfor %}

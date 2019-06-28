@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation to display a block.
+ * Theme override to display a block.
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
@@ -23,18 +23,20 @@
  *   displayed after the main title tag that appears in the template.
  *
  * @see template_preprocess_block()
- *
- * @ingroup themeable
  */
 #}
-<header class="main">
-  {{ title_prefix }}
+
+<!-- Section -->
+<section>
   {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
+    <header class="major">
+      <h2>{{ label }}</h2>
+    </header>
   {% endif %}
-  {{ title_suffix }}
+
   {% block content %}
     {{ content }}
   {% endblock %}
-</header>
+</section>
+
 
