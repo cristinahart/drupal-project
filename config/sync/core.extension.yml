@@ -3,6 +3,7 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor: 0
+  contextual: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
@@ -10,8 +11,11 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  gutenberg: 0
   help: 0
   image: 0
+  layout_builder: 0
+  layout_discovery: 0
   link: 0
   media: 0
   media_library: 0

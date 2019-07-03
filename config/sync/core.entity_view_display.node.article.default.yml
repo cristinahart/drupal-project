@@ -7,8 +7,14 @@ dependencies:
     - field.field.node.article.field_image
     - node.type.article
   module:
+    - layout_builder
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 id: node.article.default
 targetEntityType: node
 bundle: article
