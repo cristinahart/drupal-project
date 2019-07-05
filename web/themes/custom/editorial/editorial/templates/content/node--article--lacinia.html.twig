@@ -71,25 +71,28 @@
  */
 #}
 <article>
-  <div class="content">
-    {{ title_prefix }}
-    {% if not page %}
-      <h3{{ title_attributes }}>
-        {{ label }}
-      </h3>
+    {% if content.field_icon %}
+        <span class="icon {{ content.field_icon }}"></span>
     {% endif %}
-    {{ title_suffix }}
+      <div class="content">
+        {{ title_prefix }}
+        {% if not page %}
+          <h3{{ title_attributes }}>
+            {{ label }}
+          </h3>
+        {% endif %}
+        {{ title_suffix }}
 
-{#    {% if display_submitted %}#}
-{#      <footer>#}
-{#        {{ author_picture }}#}
-{#        <div{{ author_attributes }}>#}
-{#          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}#}
-{#          {{ metadata }}#}
-{#        </div>#}
-{#      </footer>#}
-{#    {% endif %}#}
+    {#    {% if display_submitted %}#}
+    {#      <footer>#}
+    {#        {{ author_picture }}#}
+    {#        <div{{ author_attributes }}>#}
+    {#          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}#}
+    {#          {{ metadata }}#}
+    {#        </div>#}
+    {#      </footer>#}
+    {#    {% endif %}#}
 
-    {{ content }}
-  </div>
+        {{ content }}
+      </div>
 </article>

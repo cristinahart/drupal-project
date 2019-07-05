@@ -71,17 +71,18 @@
  */
 #}
 
-  {{ title_prefix }}
-  {% if not page %}
-    <div class="content">
-      <header>
-        <h1{{ title_attributes }}>
-          {{ label }}
-        </h1>
-      </header>
-{#    </div>#}
-  {% endif %}
-  {{ title_suffix }}
+{{ title_prefix }}
+{% if not page %}
+  <div class="content">
+    <header>
+      <h1{{ title_attributes }}>
+        {{ label }}
+      </h1>
+    </header>
+    {{ content|without('field_image') }}
+  </div>
+{% endif %}
+{#{{ title_suffix }}#}
 
 {#  {% if display_submitted %}#}
 {#    <footer>#}
@@ -92,5 +93,6 @@
 {#      </div>#}
 {#    </footer>#}
 {#  {% endif %}#}
-
-{{ content }}
+<span class="image object">
+  {{ content.field_image }}
+</span>
