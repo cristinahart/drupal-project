@@ -35,11 +35,11 @@
     dom_id ? 'js-view-dom-id-' ~ dom_id,
   ]
 %}
-<section>
-  {{ title_prefix }}
-    {{ title }}
-  {{ title_suffix }}
 
+{#  {{ title_prefix }}#}
+    {{ title }}
+{#  {{ title_suffix }}#}
+<section>
   {% if header %}
     <header class="major">
       <h2>{{ header }}</h2>
@@ -66,6 +66,7 @@
       {{ footer }}
     </footer>
   {% endif %}
+</section>
 
   {{ feed_icons }}
-</section>
+

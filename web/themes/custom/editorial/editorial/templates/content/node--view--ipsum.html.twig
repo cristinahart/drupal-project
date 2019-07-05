@@ -70,22 +70,14 @@
  *   in different view modes.
  */
 #}
-<section id="banner">
-{% if not page %}
-  <div class="content">
-    <header>
-      <h1{{ title_attributes }}>
-        {{ label }}
-      </h1>
-      {{ content.field_subtitle }}
-    </header>
-    {{ content.field_body }}
-    <ul class="actions">
-      <li><a href="#" class="button big">Learn More</a></li>
-    </ul>
-  </div>
-{% endif %}
-{#{{ title_suffix }}#}
+<article>
+{#  {{ title_prefix }}#}
+  {% if not page %}
+    <h3{{ title_attributes }}>
+      {{ label }}
+    </h3>
+  {% endif %}
+{#  {{ title_suffix }}#}
 
 {#  {% if display_submitted %}#}
 {#    <footer>#}
@@ -96,7 +88,13 @@
 {#      </div>#}
 {#    </footer>#}
 {#  {% endif %}#}
-<span class="image object">
-  {{ content.field_image }}
-</span>
-</section>
+
+  <a href="#" class="image">{{ content.field_image }}</a>
+
+  {{ content|without('field_image') }}
+
+  <ul class="actions">
+    <li><a href="#" class="button">More</a></li>
+  </ul>
+
+</article>
